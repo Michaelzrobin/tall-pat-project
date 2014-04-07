@@ -1,5 +1,4 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
 html,
 button,
 input,
@@ -9,7 +8,7 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -59,28 +58,37 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ========================================================================= */
 
 html{
   background: #E5E5E5 url("../img/header-image.jpg") no-repeat scroll top;
   background-size: auto 289px;
+  font-family: 'Montserrat', sans-serif;
 }
 body{
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   background-color: #EEEEEE;
   padding-bottom: 10px;
+  font-family: 'Montserrat', sans-serif; 
+
 }
 
 h2{
     text-align: center;
     font-size: 1em;
+    letter-spacing: 2.5px;
+    color: #4D4D4D;
 }
 
 /*NAV BAR*/
 
+header{
+  position: relative;
+}
+
 nav{
-  margin: 243px auto 90px;
+  margin: 243px auto 90px auto;
   background-color: #FFFFFF;
   width: auto;
   height: 75px;
@@ -91,18 +99,23 @@ nav{
 
 nav a{
   display: inline-block;
-  width: 140px;
-  margin-left: 5px;
+  width: 16%;
+  color: #080808;
+  letter-spacing: 2.5px;
+  /*margin-left: 5px;*/
   vertical-align: top;
-/*  margin-left: 2%;
-  margin-right: 2%;*/
+  margin-left: 1%;
+  margin-right: 1%;
   text-align: center;
   height: 100%;
   margin-bottom: 0;
   padding-top: 28.5px;
 }
 
-
+/*nav a:nth-child(3){
+    position: absolute;
+    left: 50px;
+}*/
 nav a:first-child{
   margin-left: 0;
 }
@@ -110,6 +123,9 @@ nav a:last-child{
   margin-right: 0;
 }
 
+nav a:nth-child(3){
+  margin-left: .4%;
+}
 
 
 .logo{
@@ -117,7 +133,7 @@ nav a:last-child{
   background-repeat:no-repeat;
   height:250px;
   width:250px;
-  margin-left:0;
+  margin-left:1.3829%;
   margin-right: 0;
   margin-top: -125px;
 
@@ -132,22 +148,31 @@ nav a:last-child{
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 40px;
-    margin-left: 4.2553%;
+    margin-left: 4.256%;
     position: relative;
 }
 
 .bands div img{
     max-width: 100%;
-    height: auto;
+    height: auto; 
+
 }
 
+.bands div img:hover{
+
+  }
 
 .bands div span{
     position: absolute;
-    top: 43.75%;
+    top: 30%;
     width: 100%;
     text-align: center;
     color: white;
+    font-size: 1.875em;
+    letter-spacing: 5px;
+    /*
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);*/
 }
 
 /*.band-1{
@@ -176,21 +201,74 @@ nav a:last-child{
 }*/
 
 /*bands section clearfix*/
-.bands:after {
+/*.bands:after {
     content: "";
     display: table;
     clear: both;
 }
-
+*/
 /*ABOUT*/
-
 section.about{
     margin-top: 108px;
 }
 
 .about article{
-    width: 48.93617%;
+    width: 51%;
+    letter-spacing: 0;
     margin: 0 auto;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.banner{
+  width: auto;
+  height:250px;
+  position: relative;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+section.about, section.listen,section.buy{
+    padding-bottom: 125px;
+
+}
+
+
+.listen .banner{
+  background-image: url(../img/listen.jpg);
+}
+
+.buy .banner{
+  background-image: url(../img/buy.jpg);
+}
+
+.circle{
+  width: 36.1702%;
+  padding-bottom: 36.1702%;
+  display: block;
+  border-radius: 50%;
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  border-radius: 50%;
+  background: black;
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
+}
+
+.circle h2{
+    float:left;
+    line-height: 36px;
+    width:100%;
+    font-size: 2em;
+    padding-top:25%;
+    letter-spacing: 5px;
+    display: inline;
+    margin-left: 6px;
+    color:white;
+    text-align: center;
+
 }
 
 footer{
@@ -204,7 +282,7 @@ footer{
 
 /* ==========================================================================
    Media Queries
-   ========================================================================== */
+   ========================================================================== 
 @media only screen and (max-width: 1280px) {
     body{
         width: 860px
@@ -213,6 +291,7 @@ footer{
 @media only screen and (max-width: 860px) {
     body{
         width: 100%;
+        margin-top: -50px;
         font-size: .9em;
     }
     nav a{
