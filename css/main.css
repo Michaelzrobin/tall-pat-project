@@ -103,7 +103,7 @@ nav{
 
 nav a{
   display: inline-block;
-  width:160px;
+  width:17.42686176%;
   color: #080808;
   letter-spacing: 2.5px;
   /*margin-left: 5px;*/
@@ -124,7 +124,7 @@ nav a{
 nav a:first-child{
   padding-left: 1%;
 
-  /*margin-right: -2.5px;*/
+  margin-right: -4.5px;
 }
 nav a:last-child{
   padding-right: 1%;
@@ -378,7 +378,7 @@ footer{
       height: 75px;
     }
     nav a{
-      width: 146.2px;
+      width: 17.34648990631%;
     }
     .logo{
       height: 228.7234px;
