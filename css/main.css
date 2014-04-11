@@ -280,11 +280,11 @@ section.about, section.listen,section.buy{
 
 
 .listen .banner{
-  background-image: url(../img/listen.jpg);
+  background-image: url("../img/listen.jpg");
 }
 
 .buy .banner{
-  background-image: url(../img/buy.jpg);
+  background-image: url("../img/listen.jpg");
 }
 
 .circle{
@@ -343,17 +343,32 @@ footer{
 
 }
 
-.footer-copy{
+/*.footer-copy{
   width: 740px;
   height: 9px;
   background-image: url("../img/footer-copy.png");
   background-size: 100% 100%;
   repeat: no-repeat;
   float: left;
-}
+}*/
 
 .footer span{
-  display:block;
+  display:inline-block;
+  font-size: .75em;
+  width: 69.1489%;
+  line-height: 2.2em;
+  float: left;
+}
+.social{
+  display: inline-block;
+  float: right;
+  font-size: 1.5625em;
+  vertical-align: top;
+  margin-right: 12px;
+}
+.social i:first-child{
+  margin-right: 25px;
+  /*float: right;*/
 }
 
   .banner:hover{
@@ -386,7 +401,7 @@ footer{
       background-size: 100%;
     }
     .footer{
-      width: 850px;
+      width: 860px;
       height: 49.40425px;
       margin: 49.40425px auto 0 auto;
     }
@@ -459,7 +474,7 @@ footer{
   clear: all;
   float: none;
   position: absolute;
-  left: 0;
+  left: -4px;
   top:  -100px;
   background-size:  125px 125px;
   background-position: center top;
@@ -527,7 +542,6 @@ footer{
     padding: 10px 0;
     opacity: 1;
     font-size: .78em;
-    top: 0px;
   }
 
   .banner{
@@ -545,23 +559,29 @@ footer{
     width: 100%;
   }
 .banner .circle-text{
-    top: .5em;
+    top: 1.5em;
 
   }
 
   .footer{
-    width:100%;
+    width:80%;
   }
   footer{
 
     margin-top: 75px;
   }
-  .footer-copy{
-    display: none;
+  .footer span{
+
+  line-height: 1.5em;
   }
 }
 
-@media only screen and (max-width:340px){
+@media only screen and (max-width:480px){
+    .banner .circle-text{
+      top: .7em;
+    }
+  }
+@media only screen and (max-width:321px){
   nav a{
     font-size: 10px;
   }
@@ -572,7 +592,7 @@ footer{
 }
 
 .banner .circle-text{
-    top: -.5em;
+    top: -.3em;
   }
 
   .banner .circle-text h3{
@@ -609,6 +629,9 @@ footer{
   }
   .listen{
     margin-bottom: 20px;
+  }
+  .banner .circle-text{
+    top: 15px;
   }
 
 }
