@@ -1,4 +1,5 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
 html,
 button,
 input,
@@ -129,11 +130,26 @@ nav a:first-child{
 nav a:last-child{
   padding-right: 1%;
 }
+
+nav a span{
+  height: 49px;
+  display: inline-block;
+  border-bottom: 0px solid white;
+  box-sizing: border-box;
+  transition: 400ms;
+  -webkit-transition: 400ms;
+  padding: 0 12.5px 0 15px; /* fix for letter-spacing */
+}
+nav a span:hover{
+  display: inline-block;
+  /*padding: 0 5px;*/
+  border-bottom: 3px solid black;
+}
+
 /*
 nav a:nth-child(3){
   margin-left: .4%;
 }*/
-
 
 .logo{
   background: url("../img/logo.png");
@@ -356,7 +372,7 @@ footer{
   display:inline-block;
   font-size: .75em;
   width: 69.1489%;
-  line-height: 2.2em;
+  line-height: 2.5em;
   float: left;
 }
 .social{
@@ -366,7 +382,12 @@ footer{
   vertical-align: top;
   margin-right: 12px;
 }
-.social i:first-child{
+.social a{
+  font-style: none;
+  color: white;
+  text-decoration: none;
+}
+.social a:first-child{
   margin-right: 25px;
   /*float: right;*/
 }
@@ -466,6 +487,10 @@ footer{
   nav a:last-child{
     padding-right:0%;
   }
+nav a span{
+  height: 40px;
+  padding: 0; /* fix for letter-spacing */
+}
 
 .logo{
   width: 100%;
@@ -571,7 +596,7 @@ footer{
     margin-top: 75px;
   }
   .footer span{
-
+  margin-top:.1em;
   line-height: 1.5em;
   }
 }
@@ -579,6 +604,11 @@ footer{
 @media only screen and (max-width:480px){
     .banner .circle-text{
       top: .7em;
+    }
+    .footer span{
+
+  margin-top:0 ;
+  line-height: 1em;
     }
   }
 @media only screen and (max-width:321px){
@@ -602,6 +632,9 @@ footer{
   }
   .buy{
     margin-top: -40px;
+  }
+  .social{
+    margin-right: 6px;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 860px) {
@@ -632,6 +665,9 @@ footer{
   }
   .banner .circle-text{
     top: 15px;
+  }
+  .footer span{
+  margin-top:.5em;
   }
 
 }
