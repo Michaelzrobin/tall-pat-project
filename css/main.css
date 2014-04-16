@@ -126,6 +126,7 @@ nav .nav-link:hover span{
 
 nav a span{
   padding-left: 2.5px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   height: 100%;
@@ -432,6 +433,7 @@ footer{
   }
   .bands img{
     width: 100%;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 15px solid white;
     margin-bottom: 15px;
